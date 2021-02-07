@@ -2,24 +2,73 @@
 
 html, body {
     height: 100%;
+    position: relative;
     margin: 0;
-    padding:0;
+    padding: 0;
+    font-family:  'Open Sans', sans-serif;
 }
 
 .jumbotron {
     height: 100%;
     width: 100%;
+    position: relative;
     display: table;
     background-image: url("Assets/img1.jpg"); /* To change once I have a high-res image to use */
     background-size: cover;
     padding: 0;
+    margin: 0;
 }
 
 .hero-title {
-    height: 1000%;
+    height: 100%;
     display: table-cell;
     vertical-align: middle;
-    padding: 20%;
+    padding: 20% 20% 15% 20%;
     color: #FFFFFF;
 }
 
+.scroll-bar {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.scroll-arrow {
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+/* Sections */
+
+.grey-section {
+    background-color: #EEEEEE;
+    padding-bottom: 40px;
+}
+
+.blue-section {
+    background-color: aquamarine;
+    padding-bottom: 40px;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 40px;
+}
+
+.hr-grey {
+    border-color: grey;
+    width: 50%;
+}
+
+/* Profile */
+.profile-img {
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+}
