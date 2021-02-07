@@ -1,0 +1,25 @@
+/* Hero section */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+.jumbotron {
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-image: url("Assets/img1.jpg"); /* To change once I have a high-res image to use */
+    background-size: cover;
+    padding: 0;
+}
+
+.hero-title {
+    height: 1000%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20%;
+    color: #FFFFFF;
+}
+
