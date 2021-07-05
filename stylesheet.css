@@ -5,7 +5,7 @@ html, body {
     position: relative;
     margin: 0;
     padding: 0;
-    font-family:  'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .jumbotron {
@@ -13,18 +13,10 @@ html, body {
     width: 100%;
     position: relative;
     display: table;
-    background-image: url("Assets/img1.jpg"); /* To change once I have a high-res image to use */
+    background-image: url("Assets/hero3.png");
     background-size: cover;
     padding: 0;
     margin: 0;
-}
-
-.hero-title {
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 20% 20% 15% 20%;
-    color: #FFFFFF;
 }
 
 .scroll-bar {
@@ -46,9 +38,17 @@ html, body {
     padding-bottom: 40px;
 }
 
+.grey-section .row {
+    padding: 0% 20% 0% 20%;
+}
+
 .blue-section {
-    background-color: aquamarine;
+    background-color: rgb(127, 219, 255);
     padding-bottom: 40px;
+}
+
+.blue-section .row {
+    padding: 0% 20% 0% 20%;
 }
 
 h1, h2 {
@@ -63,6 +63,12 @@ h1, h2 {
     border-color: grey;
     width: 50%;
 }
+
+.hr-white {
+    border-color: white;
+    width: 50%;
+}
+
 
 /* Profile */
 .profile-img {
