@@ -5,6 +5,7 @@ html, body {
     position: relative;
     margin: 0;
     padding: 0;
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -27,6 +28,7 @@ html, body {
     padding-bottom: 10px;
 }
 
+/* Scroll bar animation */
 @keyframes move-arrow {
     0%, 100% {
         transform: translateY(0);
@@ -49,28 +51,29 @@ html, body {
 }
 
 /* Sections */
-
 .grey-section {
     background-color: #dadcdb;
     padding-bottom: 40px;
+    padding-top: 40px;
     color: #000000;
 }
 
 .grey-section .row {
-    padding: 0% 20% 0% 20%;
+    padding: 0% 10% 0% 10%;
 }
 
 .purple-section {
     background-color: #989fce;
     padding-bottom: 40px;
-    color: white;
+    padding-top: 40px;
+    color: black;
 }
 
 .purple-section .row {
-    padding: 0% 20% 0% 20%;
+    padding: 0% 10% 0% 10%;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-weight: bold;
 }
 
@@ -79,7 +82,7 @@ h1, h2 {
 }
 
 .hr-grey {
-    border-color: grey;
+    border-color: black;
     width: 50%;
 }
 
@@ -92,8 +95,26 @@ h1, h2 {
 /* Profile */
 .profile-img {
     border-radius: 50%;
-    border: 1px solid black;
-    height: 300px;
-    width: 300px;
+    border: 3px solid black;
     margin-top: 30px;
+    max-width: 50%;
+    height: auto;
+}
+
+/* UWA logo */
+.uwa-logo {
+    margin-top: 30px;
+    max-width: 50%;
+    height: auto;
+}
+
+/* Image breakpoints */
+@media (max-width: 1199.98px) {
+    .profile-img {
+        max-width: 30%;
+    }
+
+    .uwa-logo {
+        max-width: 30%;
+    }
 }
