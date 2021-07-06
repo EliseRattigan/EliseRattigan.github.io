@@ -26,28 +26,47 @@ html, body {
     padding-top: 15px;
     padding-bottom: 10px;
 }
+
+@keyframes move-arrow {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+}
+
 .scroll-arrow {
     font-size: 48px;
     color: #FFFFFF;
+    padding-right: 2px;
+    padding-top: 20px;
+    animation-name: move-arrow;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
 /* Sections */
 
 .grey-section {
-    background-color: #EEEEEE;
+    background-color: #dadcdb;
     padding-bottom: 40px;
+    color: #000000;
 }
 
 .grey-section .row {
     padding: 0% 20% 0% 20%;
 }
 
-.blue-section {
-    background-color: rgb(127, 219, 255);
+.purple-section {
+    background-color: #989fce;
     padding-bottom: 40px;
+    color: white;
 }
 
-.blue-section .row {
+.purple-section .row {
     padding: 0% 20% 0% 20%;
 }
 
