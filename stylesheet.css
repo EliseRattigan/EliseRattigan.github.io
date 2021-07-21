@@ -56,6 +56,7 @@ html, body {
     padding-bottom: 40px;
     padding-top: 40px;
     color: #000000;
+    position: relative;
 }
 
 .grey-section .row {
@@ -67,6 +68,7 @@ html, body {
     padding-bottom: 40px;
     padding-top: 40px;
     color: black;
+    position: relative;
 }
 
 .purple-section .row {
@@ -91,14 +93,47 @@ h1, h2, h3 {
     width: 50%;
 }
 
+/* Navbar */
+
+/* Navbar built in Bootstrap - colours customised */
+.navbar {
+    margin-bottom: 0;
+    font-size: 1.2em;
+    border: 5px solid #000000;
+    background-color: #000000;
+}
+
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:focus,
+.navbar-default .navbar-nav .active a:hover  {
+    color: white;
+    margin-bottom: 0;
+    font-weight: bold;
+    background-color: #989fce;
+}
+
+/* Inactive links */
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav li a:hover  {
+    color: white;
+    margin-bottom: 0;
+    font-weight: bold;
+}
 
 /* Profile */
 .profile-img {
     border-radius: 50%;
     border: 3px solid black;
-    margin-top: 30px;
+    margin-top: 75px;
     max-width: 50%;
     height: auto;
+    vertical-align: middle;
+}
+
+#file-icon {
+    color: #989fce;
+    font-size: 25px;
 }
 
 /* UWA logo */
@@ -112,6 +147,7 @@ h1, h2, h3 {
 @media (max-width: 1199.98px) {
     .profile-img {
         max-width: 30%;
+        margin-top: 30px;
     }
 
     .uwa-logo {

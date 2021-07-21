@@ -15,11 +15,34 @@
         <!-- Bootstrap scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- My script -->
+        <script src="script.js"></script>
     </head>
 
     <!-- TODO: Put a navbar in the top right -->
 
-    <body>
+    <body data-spy="scroll" data-target="#navbar-example" data-offset="50">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" id="navbar-example">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#qualifications">Qualifications</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <!-- Hero image -->
         <div class="jumbotron jumbotron-fluid">
             <div class="container-fluid text-center">
@@ -31,24 +54,38 @@
             </div>
         </div>
 
+
         <!-- Profile section -->
-        <div class="container-fluid grey-section">
+        <div class="container-fluid grey-section" id="profile">
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h1 class="section-title">Profile</h1>
                     <hr class="hr-grey">
+                    <p><b>Name:</b> Elise Rattigan</p>
+                    <p><b>Location:</b> Albany, Western Australia</p>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo dui sit amet neque consequat, id vehicula felis euismod. 
-                        Donec porta est ut turpis efficitur efficitur. Proin sem tellus, commodo vitae diam ullamcorper, aliquet lobortis dolor. 
-                        Nullam interdum, mi ac porta dignissim, lacus arcu pharetra nunc, in scelerisque dolor mi id dolor. Nulla dolor neque, faucibus nec felis et, 
-                        accumsan vestibulum metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat vestibulum sapien vitae feugiat. 
-                        Sed eu diam vel massa placerat condimentum. Nulla a dapibus nisi. Ut sollicitudin convallis tristique. 
-                        Vestibulum fringilla semper risus at ultricies. Sed vel tincidunt purus, a tincidunt sem.</p>
+                    <p><b>About me:</b></p>
+                    <p>I am currently a student at the University of Western Australia, soon to graduate with a Masters of Data Science. Before I started studying, I worked as a 
+                        Project Manager in the medical communications industry.  During my studies, I have continued to work in the industry as a remote freelancer and now have 
+                        over 6 years of experience.  I am very excited to graduate and find a career where I can apply both my project management skills and my newly-acquired 
+                        data science skills.</p>
+
+                    <p>I also have an interest in web development, and have been very fortunate to be able to apply my skills in an ongoing project 
+                        for Axiom Health Medical Communications. I've included more information on this 
+                        project in the Portfolio section of this page, alongside some examples of my data science projects.</p>
+
+                    <p>I've been living in Albany, WA since the beginning of 2020 and will be returning to Perth around January 2022. </p>
+                    <br>
+                    
+                    <!-- TODO: add link to CV -->
+                    <p>For a more concise outline of my experiences and qualifications, you can <b>download a PDF of my CV here:</b> &nbsp;&nbsp;&nbsp;
+                        <span><a href="#" target="_blank"><i class="fas fa-file-pdf" id="file-icon"></i></a></span> </p>
+
                 </div>
                 <div class="col-lg-5 text-center">
                     <img src="Assets/profile-pic.jpg" class="profile-img img-fluid" alt="Profile picture">
@@ -56,21 +93,35 @@
                 <div class="col-lg-1"></div>
             </div>
 
+        </div>
+        
+        
+        <!-- Experience section -->
+        <div class="container-fluid purple-section" id="experience">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Details</h2>
-                    <p><b>Name:</b> Elise Rattigan</p>
-                    <p><b>Location:</b> Albany, Western Australia</p>
-                    <!-- TODO: Put PDF of CV in here ("for a shorter version" or something like that)-->
+                <div class="col-xs-12 text-center">
+                    <h1 class="section-title">Experience</h1>
+                    <hr class="hr-grey">
                 </div>
             </div>
         </div>
-        
-        <!-- Education section -->
-        <div class="container-fluid purple-section">
+
+        <!-- Portfolio section -->
+        <div class="container-fluid grey-section" id="portfolio">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h1 class="section-title">Education</h1>
+                    <h1 class="section-title">Portfolio</h1>
+                    <hr class="hr-grey">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Qualifications section -->
+        <div class="container-fluid purple-section" id="qualifications">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h1 class="section-title">Qualifications</h1>
                     <hr class="hr-grey">
                 </div>
             </div>
@@ -133,15 +184,6 @@
             </div>
         </div>
 
-        <!-- Experience section -->
-        <div class="container-fluid grey-section">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h1 class="section-title">Experience</h1>
-                    <hr class="hr-grey">
-                </div>
-            </div>
-        </div>
 
 
 
