@@ -75,6 +75,18 @@ html, body {
     padding: 0% 10% 0% 10%;
 }
 
+.footer-section {
+    background-color: #454545;
+    padding-bottom: 200px;
+    padding-top: 40px;
+    color: white;
+    position: relative;
+}
+
+.footer-section .row {
+    padding: 0% 10% 0% 10%;
+}
+
 h1, h2, h3 {
     font-weight: bold;
 }
@@ -91,6 +103,12 @@ h1, h2, h3 {
 .hr-white {
     border-color: white;
     width: 50%;
+}
+
+/* Links */
+div a, div a:focus, div a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 /* Navbar */
@@ -139,7 +157,39 @@ h1, h2, h3 {
 /* UWA logo */
 .uwa-logo {
     margin-top: 30px;
-    max-width: 50%;
+    max-width: 40%;
+    height: auto;
+}
+
+/* Axiom logo */
+.axiom-logo {
+    margin-top: 30px;
+    margin-right: 30px;
+    max-width: 40%;
+    height: auto;
+}
+
+/* Epiq logo */
+.epiq-logo {
+    margin-top: 30px;
+    margin-right: 45px;
+    max-width: 35%;
+    height: auto;
+}
+
+/* Cube logo */
+.cube-logo {
+    margin-top: 30px;
+    margin-right: 25px;
+    max-width: 40%;
+    height: auto;
+}
+
+/* Cello logo */
+.cello-logo {
+    margin-top: 30px;
+    margin-left: 40px;
+    max-width: 60%;
     height: auto;
 }
 
@@ -151,6 +201,25 @@ h1, h2, h3 {
     }
 
     .uwa-logo {
-        max-width: 30%;
+        max-width: 15%;
     }
+
+    .epiq-logo {
+        max-width: 15%;
+    }
+
+    .cello-logo {
+        max-width: 25%;
+    }
+    
+    .cube-logo {
+        max-width: 15%;
+    }
+    
+}
+
+/* Contact section */
+.contact-icon {
+    color: #dadcdb;
+    font-size: 30px;
 }
