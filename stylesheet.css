@@ -168,6 +168,17 @@ h1, h2, h3 {
     font-size: 300px;
 }
 
+/* SKILLS SECTION */
+/* Skills tables */
+td {
+    width: 50%;
+}
+
+/* Star icons for skills section */
+.skills {
+    color: #989fce;
+}
+
 /* UWA logo */
 .uwa-logo {
     margin-top: 30px;
@@ -284,6 +295,7 @@ h1, h2, h3 {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  text-decoration: none;
 }
 
 /* The dots/bullets/indicators */
