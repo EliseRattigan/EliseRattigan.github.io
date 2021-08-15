@@ -15,8 +15,6 @@
         <!-- Bootstrap scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <!-- My script -->
-        <script src="script.js"></script>
     </head>
 
     <!-- TODO: Put a navbar in the top right -->
@@ -105,10 +103,83 @@
                     <hr class="hr-grey">
                 </div>
             </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 text-center">
+                    <div class="slideshow-container">
+                        <!-- CFP image 1-->
+                        <div class="mySlides fadein">
+                            <img src="Assets/axiom_cfp_1.png" style="width:100%">
+                        </div>
+                    
+                        <!-- CFP image 2-->
+                        <div class="mySlides fadein">
+                            <img src="Assets/axiom_cfp_3.png" style="width:100%">
+                        </div>
+                    
+                        <!-- CFP image 3-->
+                        <div class="mySlides fadein">
+                            <img src="Assets/axiom_cfp_2.png" style="width:100%">
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>   
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h2>Axiom Congress Feedback Portal</h2>
+                    <ul>
+                        <li>My most recent project has been designing and developing the Congress Feedback Portal for Axiom Health Ltd.</li>
+                        <li>The Portal is designed for gathering feedback from healthcare professionals (HCPs) at medical congresses.</li>
+                        <li>Some screenshots of the portal are displayed to the left:
+                            <ol>
+                                <li>HCPs sign in to the Portal with their own username and password</li>
+                                <li>The home page is tailored to each HCP</li>
+                                <li>They can see the list of congress abstracts they are requested to give feedback on, and click a link to take them to each individual
+                                    survey, hosted on a separate survey platform. They can also toggle the Completed button when they have finished a survey.</li>
+                            </ol>
+                        </li>
+                        <li>As Axiom's sole developer, I designed and built this Portal from scratch using Bootstrap, Flask and PostgreSQL.</li>
+                        <li>The Portal is hosted on Heroku and deployed with GitHub.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <br>
+            <hr class="hr-small">
+            <br>
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 text-center">
+                    <br>
+                    <br>
+                    <a href="https://github.com/EliseRattigan/data_science_portfolio" target="_blank" class="main_link">
+                        <i class="fab fa-github github-icon"></i></a>
+                </div>
+                <div class="col-lg-5">
+                    <h2>Data Science Portfolio</h2>
+                    <ul>
+                        <li>Click on the GitHub logo to the left to visit my data science portolio repository.</li>
+                        <li>It is a collection of select machine learning and data analysis projects completed for academic purposes, as examples of my data science work.</li>
+                        <li>It is a work in progress, so more projects will be added to the repository once complete.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1"></div>
+
+            </div>
         </div>
 
         <!-- Skills section -->
-        <div class="container-fluid grey-section" id="portfolio">
+        <div class="container-fluid grey-section" id="skills">
             <div class="row">
                 <div class="col-xs-12 text-center">
                     <h1 class="section-title">Skills</h1>
@@ -138,7 +209,7 @@
                     <h3>MDSc Master of Data Science</h3>
                     <p>2019 - 2021</p>
                     <ul>
-                        <li>Currently completing a Master of Data Science with a weighted average mark of 87.5%.</li>
+                        <li>Currently completing a Master of Data Science with a weighted average mark of 88%.</li>
                         <li>Achievements:
                             <ul>
                                 <li>Obtained highest mark in the 2020 PUBH5785 Introductory Analysis of Linked Health Data</li>
@@ -349,13 +420,13 @@
             <div class="row">
                 <div class="col-xs-2"></div>
                 <div class="col-xs-8 text-center">
-                    <p><a href="https://github.com/EliseRattigan" target="_blank"><span><i class="fab fa-github contact-icon"></i>&nbsp;&nbsp; 
+                    <p><a href="https://github.com/EliseRattigan" target="_blank" class="footer_link"><span><i class="fab fa-github contact-icon"></i>&nbsp;&nbsp; 
                         https://github.com/EliseRattigan</a></span></p>
                     <br>
-                    <p><a href="https:/linkedin.com/in/eliserattigan/" target="_blank"><span><i class="fab fa-linkedin contact-icon"></i>&nbsp;&nbsp; 
+                    <p><a href="https:/linkedin.com/in/eliserattigan/" target="_blank" class="footer_link"><span><i class="fab fa-linkedin contact-icon"></i>&nbsp;&nbsp; 
                         https://linkedin.com/in/eliserattigan/</a></span></p>
                     <br>
-                    <p><a href="mailto:elise.rattigan@gmail.com" target="_blank"><span><i class="fas fa-at contact-icon"></i>&nbsp;&nbsp; 
+                    <p><a href="mailto:elise.rattigan@gmail.com" target="_blank" class="footer_link"><span><i class="fas fa-at contact-icon"></i>&nbsp;&nbsp; 
                         elise.rattigan@gmail.com</a></span></p>
                 </div>
                 <div class="col-xs-2"></div>
@@ -367,5 +438,7 @@
 
 
     </body>
+    <!-- My script -->
+    <script src="script.js"></script>
 
 </html>
