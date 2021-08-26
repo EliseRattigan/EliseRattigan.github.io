@@ -10,7 +10,7 @@ html, body {
 }
 
 /* Different hero images for different screen sizes */
-@media (min-width: 768px) {
+@media (min-width: 400px) {
     .jumbotron {
         height: 100%;
         width: 100%;
@@ -22,7 +22,7 @@ html, body {
         margin: 0;
     }
 
-@media (min-width: 200px) {
+@media (min-width: 100px) {
     .jumbotron {
         height: 100%;
         width: 100%;
