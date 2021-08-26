@@ -9,17 +9,30 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.jumbotron {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    display: table;
-    background-image: url("Assets/hero.png");
-    background-size: cover;
-    padding: 0;
-    margin: 0;
-}
+/* Different hero images for different screen sizes */
+@media (min-width: 768px) {
+    .jumbotron {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: table;
+        background-image: url("Assets/hero.png");
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
 
+@media (min-width: 200px) {
+    .jumbotron {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: table;
+        background-image: url("Assets/heromobile.png");
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
 
 .scroll-bar {
     background-color: black;
