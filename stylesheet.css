@@ -9,39 +9,6 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Different hero images for different screen sizes */
-@media (min-width: 320px) {
-    .jumbotron {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        display: table;
-        background-image: url("Assets/heromobile.png");
-        background-size: cover;
-        padding: 0;
-        margin: 0;
-    }
-
-@media (min-width: 600px) {
-    .jumbotron {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        display: table;
-        background-image: url("Assets/hero.png");
-        background-size: cover;
-        padding: 0;
-        margin: 0;
-    }
-
-.scroll-bar {
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
 /* Scroll bar animation */
 @keyframes move-arrow {
     0%, 100% {
@@ -346,3 +313,45 @@ td {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+/* Different hero images for different screen sizes */
+@media (min-width: 320px) {
+    .jumbotron {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: table;
+        background-image: url("Assets/heromobile2.png");
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    .scroll-bar {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+@media (min-width: 600px) {
+    .jumbotron {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: table;
+        background-image: url("Assets/hero.png");
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+
+    .scroll-bar {
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
