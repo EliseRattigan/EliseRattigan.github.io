@@ -57,8 +57,7 @@ html, body {
 
 .footer-section {
     background-color: #454545;
-    padding-bottom: 200px;
-    padding-top: 40px;
+    padding: 40px 0px 200px 0px;
     color: white;
     position: relative;
 }
