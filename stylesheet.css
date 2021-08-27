@@ -40,7 +40,7 @@ html, body {
 }
 
 .grey-section .row {
-    padding: 0% 10% 0% 10%;
+    padding: 0% 5% 0% 5%;
 }
 
 .purple-section {
@@ -52,7 +52,7 @@ html, body {
 }
 
 .purple-section .row {
-    padding: 0% 10% 0% 10%;
+    padding: 0% 5% 0% 5%;
 }
 
 .footer-section {
@@ -133,10 +133,6 @@ h1, h2, h3 {
     font-size: 25px;
 }
 
-.github-icon {
-    font-size: 300px;
-}
-
 /* SKILLS SECTION */
 /* Skills tables */
 td {
@@ -161,6 +157,7 @@ td {
 .slideshow-container {
   max-width: 90%;
   position: relative;
+  margin: auto;
   margin-top: 20px;
 }
 
@@ -293,6 +290,10 @@ td {
         vertical-align: middle;
     }
 
+    .github-icon {
+        font-size: 300px;
+    }
+
     .uwa-logo {
         margin-top: 30px;
         max-width: 50%;
@@ -335,6 +336,10 @@ td {
         max-width: 40%;
     }
 
+    .github-icon {
+        font-size: 300px;
+    }
+
     .uwa-logo {
         margin-top: 30px;
         max-width: 20%;
@@ -371,6 +376,10 @@ td {
         margin-top: 0px;
         margin-bottom: 30px;
         max-width: 50%;
+    }
+
+    .github-icon {
+        font-size: 250px;
     }
 
     .uwa-logo {
